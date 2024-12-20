@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WELLBEING</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
@@ -29,17 +29,17 @@
             </button>
             <div class="navbar-collapse collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Framework</a></li>
-                    <li class="nav-item"><a class="nav-link" href="work.html">Lifecycle</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#life-cycle">Lifecycle</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#framework">Framework</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="slider-hero">
+    <section id="home" class="slider-hero">
         <div class="overlay"></div>
         <div class="tns-outer" id="tns1-ow">
             <div class="tns-nav" aria-label="Carousel Pagination"></div>
@@ -102,7 +102,7 @@
         </div>
     </section>
 
-    <section class="ftco-section bg-light wheel">
+    <section id="about" class="ftco-section bg-light wheel">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-5 heading-section text-center mb-5 aos-init aos-animate" data-aos="fade-up"
@@ -118,7 +118,7 @@
             </div>
     </section>
 
-    <section class="ftco-section life_cycle">
+    <section id="life-cycle" class="ftco-section life-cycle">
         <div class="container-xl">
             <div class="row g-lg-5">
                 <div class="col-lg-6 order-lg-last heading-section d-flex align-items-center aos-init aos-animate"
@@ -193,7 +193,7 @@
         </div>
     </section>
 
-    <section class="ftco-section ftco-image img individual">
+    <section id="framework" class="ftco-section ftco-image img individual">
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-md-6 heading-section aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
@@ -234,72 +234,6 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <!-- graph 1 -->
-                <canvas id="myChart0" width="400" height="200"></canvas>
-                <script>
-                    const ctx0 = document.getElementById('myChart0').getContext('2d');
-                    const myChart0 = new Chart(ctx0, {
-                        type: 'bar',
-                        data: {
-                            labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
-                            datasets: [
-                                {
-                                    label: 'No. of listed companies',
-                                    data: [1897, 1908, 1939, 1965, 1962, 1906, 1998, 2074, 2014, 1596],
-                                    backgroundColor: 'rgba(189, 215, 238, 1)',
-                                    borderColor: 'rgba(0, 0, 0, 1)',
-                                    borderWidth: 1,
-                                    stack: 0
-                                },
-                                {
-                                    label: 'Ethics',
-                                    data: [883, 522, 1010, 1403, 1148, 1080, 815, 1244, 1932, 435],
-                                    backgroundColor: 'rgba(204, 192, 218, 1)',
-                                    borderColor: 'rgba(0, 0, 0, 1)',
-                                    borderWidth: 1,
-                                    stack: 1
-                                },
-                                {
-                                    label: 'Diversity',
-                                    data: [1362, 749, 1084, 1491, 1245, 1203, 842, 1239, 1933, 425],
-                                    backgroundColor: 'rgba(255, 242, 204, 1)',
-                                    borderColor: 'rgba(0, 0, 0, 1)',
-                                    borderWidth: 1,
-                                    stack: 1
-                                }
-                            ]
-                        },
-                        options: {
-                            scales: {
-                                y: {
-                                    beginAtZero: true,
-                                    stacked: true
-                                },
-                                x: {
-                                    stacked: true
-                                }
-                            },
-                            plugins: {
-                                tooltip: {
-                                    callbacks: {
-                                        label: function (context) {
-                                            let label = context.dataset.label || '';
-                                            if (label) {
-                                                label += ': ';
-                                            }
-                                            if (context.parsed.y !== null) {
-                                                label += context.parsed.y;
-                                            }
-                                            return label;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    });
-                </script>
-
-                <!-- graph 2 -->
                 <canvas id="myChart" width="400" height="200"></canvas>
                 <script>
                     const ctx = document.getElementById('myChart').getContext('2d');
@@ -388,7 +322,7 @@
         </div>
     </section>
 
-    <footer class="ftco-footer img" style="background-image: url(img.jpg);">
+    <footer id="contact" class="ftco-footer img" style="background-image: url(img.jpg);">
         <div class="overlay"></div>
         <div class="container-xl">
             <div class="row mb-5 justify-content-between">
