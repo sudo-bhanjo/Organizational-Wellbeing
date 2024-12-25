@@ -344,9 +344,9 @@ a {
 
 .slider-hero .work .text h1,
 .slider-hero .work .text .h1 {
-    font-weight: 400;
+    font-weight: 300;
     color: #fff;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 1.2;
 }
 
@@ -496,22 +496,18 @@ a {
 }
 
 .form-control::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
     color: rgba(0, 0, 0, 0.3) !important;
 }
 
 .form-control::-moz-placeholder {
-    /* Firefox 19+ */
     color: rgba(0, 0, 0, 0.3) !important;
 }
 
 .form-control:-ms-input-placeholder {
-    /* IE 0+ */
     color: rgba(0, 0, 0, 0.3) !important;
 }
 
 .form-control:-moz-placeholder {
-    /* Firefox 18- */
     color: rgba(0, 0, 0, 0.3) !important;
 }
 
@@ -808,7 +804,6 @@ textarea.form-control {
 .ftco-footer .ftco-footer-widget ul.list-unstyled li {
     margin-bottom: 10px;
     position: relative;
-    padding-left: 20px;
 }
 
 .ftco-footer .ftco-footer-widget ul.list-unstyled li a {
@@ -889,7 +884,6 @@ textarea.form-control {
 
 .ftco-footer .block-21 .text {
     width: calc(100% - 50px);
-    padding-left: 20px;
 }
 
 .ftco-footer .block-21 .text .heading {
@@ -992,10 +986,9 @@ textarea.form-control {
 }
 
 .heading-section .subheading {
-    font-size: 13px;
+    font-size: 20px;
     display: block;
     margin-bottom: 5px;
-    color: rgba(0, 0, 0, 0.3);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
