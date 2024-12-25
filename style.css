@@ -18,7 +18,8 @@ a {
 
 .ftco-navbar-light {
     background: white !important;
-    position: absolute;
+    position: sticky;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 3;
@@ -698,7 +699,7 @@ textarea.form-control {
 }
 
 .ftco-section {
-    padding: 8em 0;
+    padding: 2em 0;
     position: relative;
     width: 100%;
     overflow-x: hidden;
