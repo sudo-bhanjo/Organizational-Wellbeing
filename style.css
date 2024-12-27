@@ -994,7 +994,6 @@ textarea.form-control {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
 }
 
 .heading-section .subheading {
