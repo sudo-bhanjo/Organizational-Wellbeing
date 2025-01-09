@@ -432,6 +432,49 @@ a {
     background: #084474 !important;
 }
 
+.top-text,
+.bottom-text {
+    text-align: justify;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.intro img {
+    width: 80%;
+    height: auto;
+}
+
+.image {
+    flex: 0 0 50%;
+}
+
+.text {
+    flex: 0 0 50%;
+    text-align: justify;
+}
+
+@media (max-width: 991px) {
+    .image,
+    .text {
+        flex: 0 0 100%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .image {
+        flex: 0 0 60%;
+    }
+
+    .text {
+        flex: 0 0 40%;
+    }
+}
+
 .btn {
     padding: 9px 12px;
     cursor: pointer;
