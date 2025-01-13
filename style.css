@@ -28,7 +28,7 @@ a {
 
 @media (max-width: 991.98px) {
     .ftco-navbar-light {
-        background: #052c43 !important;
+        background: #074173 !important;
         padding: 1em 0;
         position: sticky;
         top: 0;
@@ -44,12 +44,17 @@ a {
 
 .ftco-navbar-light .navbar-brand small,
 .ftco-navbar-light .navbar-brand .small {
-    color: #084474;
+    color: #074173;
 }
 
 @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-brand {
         color: #fff;
+    }
+
+    .ftco-navbar-light .navbar-brand small,
+    .ftco-navbar-light .navbar-brand .small {
+        color: #58A1CC;
     }
 }
 
@@ -71,7 +76,7 @@ a {
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
-    font-size: 15px;
+    font-size: 18px;
     padding-top: 1.7rem;
     padding-bottom: 1.7rem;
     padding-left: 15px;
@@ -351,8 +356,13 @@ a {
 .slider-hero .work .text .h1 {
     font-weight: 300;
     color: #fff;
-    font-size: 50px;
+    font-size: 55px;
     line-height: 1.2;
+}
+
+.slider-hero .work .text p{
+    font-weight: 200;
+    font-size: 25px;
 }
 
 .slider-hero .work .text h1 span,
@@ -365,6 +375,10 @@ a {
     .slider-hero .work .text h1,
     .slider-hero .work .text .h1 {
         font-size: 40px;
+    }
+
+    .slider-hero .work .text p{
+        font-size: 15px;
     }
 }
 
@@ -445,7 +459,6 @@ a {
 }
 
 .intro img {
-    width: 80%;
     height: auto;
 }
 
@@ -837,7 +850,7 @@ textarea.form-control {
 .ftco-footer .logo a small,
 .ftco-footer .logo a .small {
     font-size: 20px;
-    color: #084474;
+    color: #58A1CC;
 }
 
 .ftco-footer .ftco-footer-widget h2,
@@ -867,7 +880,7 @@ textarea.form-control {
 }
 
 .ftco-footer .ftco-footer-widget ul.list-unstyled li a:hover {
-    color: #084474;
+    color: white;
 }
 
 .ftco-footer .ftco-footer-widget ul.list-unstyled li a:hover span {
@@ -1193,7 +1206,7 @@ textarea.form-control {
     z-index: -1;
     -webkit-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.01);
     -moz-box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.01);
-    box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.01);
+    box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.03);
 }
 
 .staff .text h3,
