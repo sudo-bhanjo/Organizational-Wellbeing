@@ -1278,25 +1278,3 @@ textarea.form-control {
     background: rgba(255, 255, 255, 0.3);
     color: #fff;
 }
-
-
-.map-container {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.map-container img {
-    width: 100%;
-    height: auto;
-}
-
-.highlight {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.highlight:hover {
-    opacity: 0.3;
-}
