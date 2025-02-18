@@ -23,3 +23,28 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
     });
 });
+
+
+
+
+const areas = document.querySelectorAll('area');
+const highlights = document.querySelectorAll('.highlight path');
+
+areas.forEach(area => {
+    area.addEventListener('mouseover', () => {
+        const highlightId = area.getAttribute('data-highlight');
+        const highlightElement = document.getElementById(highlightId);
+        if (highlightElement) {
+            highlightElement.style.opacity = '0.3';
+        }
+    });
+
+    area.addEventListener('mouseout', () => {
+        const highlightId = area.getAttribute('data-highlight');
+        const highlightElement = document.getElementById(highlightId);
+        if (highlightElement) {
+            highlightElement.style.opacity = '0';
+        }
+    });
+});
+ 
